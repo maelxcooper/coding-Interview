@@ -1,0 +1,392 @@
+/* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
+/*-- -------------------------- -->
+<---        About               -->
+<--- -------------------------- -*/
+#about .cs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#about .text-content {
+  max-width: 700px;
+}
+#about .image-group {
+  /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
+  font-size: min(2vw, 0.8em);
+  width: 48.6875em;
+  height: 33.875em;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+#about .image-group .cs-picture {
+  position: absolute;
+}
+#about .image-group .cs-picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+#about .image-group .cs-picture1 {
+  width: 48.6875em;
+  height: 33.875em;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  #about .cs-container {
+    flex-direction: row;
+  }
+  #about .image-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
+    font-size: min(0.8vw, 0.8em);
+  }
+  #about .text-content {
+    max-width: 500px;
+  }
+}
+/*-- -------------------------- -->
+<---        services               -->
+<--- -------------------------- -*/
+#services .cs-container {
+  max-width: 1245px;
+}
+#services .cs-title {
+  text-align: center;
+}
+#services .navbar {
+  border-radius: 61px;
+  background: rgba(37, 8, 45, 0.1);
+  color: white;
+  margin-bottom: 25px;
+}
+#services .text-content {
+  max-width: 700px;
+}
+#services .navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+#services .service-link {
+  text-decoration: none;
+  color: #000000;
+  padding: 15px 25px;
+  font-size: 16px;
+}
+#services .service {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#services .service h2 {
+  color: #333;
+}
+#services .service button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#services .service button:hover {
+  background-color: #555;
+}
+#services a.active {
+  border-radius: 55px;
+  background: #049A4B;
+  color: #fff;
+}
+#services .image-group {
+  /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
+  font-size: min(0.8vw, 0.8em);
+  width: 43.25em;
+  height: 42em;
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+#services .image-group .cs-picture {
+  position: absolute;
+}
+#services .image-group .cs-picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+#services .image-group .cs-picture1 {
+  width: 43.25em;
+  height: 42em;
+  top: 0;
+  left: 0;
+}
+#services #salmon .image-group {
+  width: 45em;
+  height: 43.3125em;
+}
+#services #salmon .image-group .cs-picture1 {
+  width: 45em;
+  height: 43.3125em;
+}
+#services #sturgeon .image-group {
+  width: 43.0625em;
+  height: 53.125em;
+}
+#services #sturgeon .image-group .cs-picture1 {
+  width: 43.0625em;
+  height: 53.125em;
+}
+#services #bottom-fish .image-group {
+  width: 42.5625em;
+  height: 53.125em;
+}
+#services #bottom-fish .image-group .cs-picture1 {
+  width: 42.5625em;
+  height: 53.125em;
+}
+#services #steelhead .image-group {
+  font-size: min(0.8vw, 0.5em);
+  width: 37.4375em;
+  height: 49.1875em;
+}
+#services #steelhead .image-group .cs-picture1 {
+  width: 37.4375em;
+  height: 49.1875em;
+}
+#services #crabbing .image-group {
+  width: 43.0625em;
+  height: 53.125em;
+}
+#services #crabbing .image-group .cs-picture1 {
+  width: 43.0625em;
+  height: 53.125em;
+}
+#services #shad .image-group {
+  width: 42.5625em;
+  height: 53.125em;
+}
+#services #shad .image-group .cs-picture1 {
+  width: 42.5625em;
+  height: 53.125em;
+}
+
+/* Add a media query for screens with a maximum width of 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+  #services .navbar {
+    background: none;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column; /* Display the rows vertically on mobile */
+    align-items: center; /* Center-align rows horizontally */
+    gap: 10px;
+  }
+  #services .navbar-row {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    gap: 5px;
+  }
+  #services .service-link {
+    flex: 1; /* Distribute links evenly within each row */
+    max-width: 33%; /* Make sure each row contains only 3 links */
+    text-align: center; /* Center-align text within each link */
+    border-radius: 61px;
+    background: rgba(37, 8, 45, 0.1);
+    padding: 5px 0px;
+  }
+  #services .service-link.active {
+    background: #049A4B !important;
+  }
+}
+/* Add a media query for screens with a minimum width of 769px (adjust as needed) */
+@media screen and (min-width: 769px) {
+  #services .cs-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #services .navbar {
+    display: flex;
+    flex-direction: row; /* Display the links in a single row on larger screens */
+    justify-content: center; /* Center-align links horizontally */
+    padding: 20px 0;
+    width: 100%;
+    max-width: 746px;
+    align-self: center;
+    margin-bottom: 3rem;
+  }
+}
+/* Add a media query for screens with a minimum width of 769px (adjust as needed) */
+@media screen and (min-width: 1024px) {
+  #services .service {
+    flex-direction: row;
+    align-items: start;
+  }
+  #services .service-link {
+    font-size: 20px;
+  }
+  #services .navbar {
+    width: 100%;
+    max-width: 850px;
+    margin-bottom: 60px;
+  }
+  #services .image-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
+    display: block;
+  }
+  #services .text-content {
+    max-width: 500px;
+  }
+}
+/*-- -------------------------- -->
+<---         family               -->
+<--- -------------------------- -*/
+#family-friendly .cs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#family-friendly .text-content {
+  max-width: 700px;
+}
+#family-friendly .image-group {
+  /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
+  font-size: min(2vw, 0.8em);
+  width: 43.25em;
+  height: 42em;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+#family-friendly .image-group .cs-picture {
+  position: absolute;
+}
+#family-friendly .image-group .cs-picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+#family-friendly .image-group .cs-picture1 {
+  width: 43.25em;
+  height: 42em;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  #family-friendly .cs-container {
+    flex-direction: row;
+  }
+  #family-friendly .image-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
+    font-size: min(0.8vw, 0.8em);
+  }
+  #family-friendly .text-content {
+    max-width: 500px;
+  }
+}
+/*-- -------------------------- -->
+<---         Youtube               -->
+<--- -------------------------- -*/
+#youtube .cs-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#youtube .video-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  #youtube .video-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+/*-- -------------------------- -->
+<---         reviews               -->
+<--- -------------------------- -*/
+#reviews {
+  background-color: #E9E6EA;
+}
+#reviews .cs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#reviews .cs-text.sub-heading {
+  font-size: 20px;
+}
+#reviews .bottom-reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+#reviews .cs-text {
+  font-size: 16px;
+}
+#reviews .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 45px;
+}
+#reviews .review-wrapper {
+  border-left: 1px solid rgba(0, 0, 0, 0.36);
+  padding-left: 18px;
+  max-width: 450px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#reviews .bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#reviews .author {
+  color: var(--secondary);
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media only screen and (min-width: 1024px) {
+  #reviews .row {
+    flex-direction: row;
+    gap: 10px;
+  }
+  #reviews .bottom-reviews {
+    margin-top: 30px;
+    gap: 100px;
+  }
+}/*# sourceMappingURL=home.css.map */

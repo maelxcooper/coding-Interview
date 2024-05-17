@@ -1,0 +1,264 @@
+/*-- -------------------------- -->
+<---      salmon-hero           -->
+<--- -------------------------- -*/
+@font-face {
+  font-family: "Madesoulmaze";
+  src: url("../fonts/madeSoulmaze.woff") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+img {
+  max-width: 100%;
+}
+
+#salmon-hero .Section_top .hero-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#salmon-overview .image-group {
+  width: 45.625em;
+  height: 35.0625em;
+}
+#salmon-overview .image-group .cs-picture1 {
+  width: 45.625em;
+  height: 35.0625em;
+}
+
+#salmon-location .image-group {
+  width: 37.375em;
+  height: 33.5em;
+}
+#salmon-location .image-group .cs-picture1 {
+  width: 37.375em;
+  height: 33.5em;
+}
+
+#salmon-bring .image-group {
+  width: 46.6875em;
+  height: 43.125em;
+}
+#salmon-bring .image-group .cs-picture1 {
+  width: 46.6875em;
+  height: 43.125em;
+}
+
+/*-- -------------------------- -->
+<---      salmon-body          -->
+<--- -------------------------- -*/
+.nw-con {
+  max-width: 100%;
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.salmon-con {
+  display: flex;
+  gap: 6em;
+}
+
+.salmon-body-ovw {
+  width: 534px;
+  max-width: 100%;
+}
+.salmon-body-ovw small {
+  font-size: 24px;
+  color: #049A4B;
+  font-weight: bold;
+}
+.salmon-body-ovw h2 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #25082D;
+  font-family: "Madesoulmaze";
+  margin-bottom: 12px;
+}
+.salmon-body-ovw h2 mark {
+  background: none;
+  color: inherit;
+  display: block;
+}
+.salmon-body-ovw h2 mark span {
+  color: #049A4B;
+}
+.salmon-body-ovw p {
+  line-height: 26px;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.salmon-body-ovw ul {
+  list-style: none;
+}
+.salmon-body-ovw ul li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.salmon-body-ovw ul li::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: #049A4B;
+  left: -2px;
+  top: 8px;
+  border-radius: 50%;
+}
+
+#book-our-services {
+  padding-top: 0;
+}
+
+.bos_con {
+  background: #25082D;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bos_con > div {
+  width: 52%;
+  padding-left: 40px;
+  margin: 60px 0 0;
+}
+.bos_con h3 {
+  font-size: 42px;
+  font-family: "Madesoulmaze";
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.bos_con p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.bos_con img {
+  -webkit-clip-path: circle(50% at 73% 50%);
+          clip-path: circle(50% at 73% 50%);
+  width: 466px;
+  max-width: 100%;
+  border-radius: 0 40px 40px 0;
+}
+
+#pricing {
+  padding-top: 0;
+}
+#pricing h4 {
+  text-align: center;
+  font-size: 42px;
+  font-family: "Madesoulmaze";
+  color: #25082D;
+}
+#pricing h4 span {
+  color: #049A4B;
+  font-size: inherit;
+}
+#pricing .package-flex {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background: #D9D9D9;
+  border-radius: 20px;
+  gap: 4em;
+  margin: 40px auto 0;
+  width: 1035px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+#pricing .package-flex > div {
+  background: #fff;
+  border-radius: 26px;
+  padding: 60px 20px;
+  width: 295px;
+  min-height: 230px;
+}
+#pricing .package-flex > div span.usd {
+  font-size: 40px;
+  font-family: "Madesoulmaze";
+}
+#pricing .package-flex > div small {
+  display: block;
+  color: #145FA4;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#pricing .package-flex > div mark {
+  background: none;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+#pricing .package-flex > div:not(.lst) {
+  background: #25082D;
+}
+#pricing .package-flex > div:first-child span.fr {
+  color: #049A4B;
+}
+#pricing .package-flex > div:nth-child(2) span.sec {
+  color: #25082D;
+}
+#pricing .package-flex > div:last-child {
+  color: #fff;
+}
+#pricing .package-flex > div:last-child span {
+  color: #fff;
+}
+#pricing .package-flex > div:last-child p {
+  color: #fff;
+}
+#pricing .package-flex > div:last-child span.th {
+  color: #fff;
+}
+#pricing .package-flex > div:last-child small {
+  color: inherit !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  p {
+    font-size: 16px !important;
+  }
+  .salmon-con {
+    display: block;
+  }
+  .salmon-con img {
+    display: block;
+    margin: 0 auto;
+  }
+  .salmon-body-ovw {
+    width: 100%;
+    margin: 40px 0 0;
+  }
+  .bos_con {
+    padding: 40px;
+  }
+  .bos_con > div {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .bos_con img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 34px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bos_con h3 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .package-flex > div span.usd {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=salmon.css.map */
