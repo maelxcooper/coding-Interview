@@ -167,7 +167,6 @@ img {
   margin: 40px auto 0;
   width: 1035px;
   max-width: 100%;
-  flex-wrap: wrap;
 }
 #pricing .package-flex > div {
   background: #fff;
@@ -245,6 +244,9 @@ img {
   }
   .bos_con img {
     display: none;
+  }
+  .package-flex {
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 800px) {
